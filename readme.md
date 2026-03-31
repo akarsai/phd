@@ -9,7 +9,8 @@ This repository contains the code for the numerical experiments in the thesis.
 ```shell
 git clone https://github.com/akarsai/phd.git && cd phd
 ``` 
-3. Run experiments (the plots will be placed in the `results/figures` directory):
+3. **Optional:** Download the [associated dataset](https://doi.org/10.5281/zenodo.19358955) to use precalculated results, place in `results/pickle` directory.
+4. Run experiments (the plots will be placed in the `results/figures` directory):
 ```shell
 uv run python plots/dg_intro.py
 ```
