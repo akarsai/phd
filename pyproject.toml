@@ -1,0 +1,26 @@
+[project]
+name = "phd-thesis-nonlinear-energy-based-systems"
+version = "0.1.0"
+description = "Code for the PhD thesis 'Nonlinear Energy-Based Systems: Modeling, Control and Numerical Realization', A. Karsai"
+readme = "readme.md"
+requires-python = ">=3.14"
+dependencies = [
+    "fenics-basix>=0.0.13",
+    "jax>=0.6.0",
+    "lineax>=0.0.8",
+    "matplotlib>=3.10.3",
+    "numpy>=2.3.2",
+    "scipy>=1.16.1",
+    "sparsejac>=0.2.0",
+    "control>=0.10.2",
+    "casadi>=3.7.2"
+]
+
+[tool.setuptools.packages.find]
+exclude = ["plots*", "results*", "old*", "uv.lock"]
+
+[tool.uv]
+package = true
+
+[tool.distutils.egg_info] 
+egg_base = ".build"
